@@ -1,6 +1,7 @@
 import React from 'react';
 import logo from './logo.svg';
 import './App.css';
+import * as Style from './styles';
 
 function App() {
     return (
@@ -10,7 +11,21 @@ function App() {
             <div className="reg bl" />
             <div className="reg br" />
             <header className="App-header">
-                <h1>Leroux van As</h1>
+                <div>
+                    <h1>Leroux van As</h1>
+                    <Style.ColorSwatch>
+                        <div />
+                        <div />
+                        <div />
+                        <div />
+                        <div />
+                    </Style.ColorSwatch>
+                    <Style.CategoryWrapper>
+                        <div>Work</div>
+                        <div>About</div>
+                        <div>Contact</div>
+                    </Style.CategoryWrapper>
+                </div>
             </header>
         </div>
     );
